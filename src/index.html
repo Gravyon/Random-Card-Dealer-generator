@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,17 +13,59 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+
+  <body class="bg-success vh-100">
+    <div class=" text-center bg-success">
+      <div>
+        <div class="row g-3">
+          <div class="col-sm">
+            <input
+              id="cardHeightID"
+              for="cardHeight"
+              type="text"
+              class="form-control"
+              placeholder="Height"
+            />
+          </div>
+          <button id="boton" type="button" class="col-sm btn btn-danger">
+            Generate card
+          </button>
+          <div class="col-sm">
+            <input
+              id="cardWidthID"
+              for="cardWidth"
+              type="text"
+              class="form-control"
+              placeholder="Width"
+              aria-label="Zip"
+            />
+          </div>
+        </div>
+        <div
+          class="container-xl mt-2"
+          style="display: flex;justify-content: center;"
+        >
+          <div
+            id="cartas"
+            class="row container-fluid text-center bg-white rounded"
+          >
+            <div
+              id="paloUno"
+              class="col align-self-start w-25 h-25 d-flex justify-content-start paloUno"
+            >
+              Palo
+            </div>
+            <div id="numero" class="col align-self-center w-50 h-50 numero">
+              Numero
+            </div>
+            <div
+              id="paloDos"
+              class="col align-self-end w-25 h-25 d-flex justify-content-end paloDos"
+            >
+              Palo
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

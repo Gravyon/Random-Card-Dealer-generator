@@ -1,1 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.paloUno {
+  font-size: 7rem !important;
+  float: left;
+}
+
+.numero {
+  font-size: 7rem !important;
+}
+
+.paloDos {
+  font-size: 7rem !important;
+  float: right;
+}
+
+#contenedor {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+#cartas {
+  width: 400px;
+  height: 700px;
+}
